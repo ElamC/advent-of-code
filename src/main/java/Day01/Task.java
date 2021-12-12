@@ -43,7 +43,7 @@ public class Task {
 
         try {
             BufferedReader br = new BufferedReader(
-                    new FileReader("src/Day01/input.txt"));
+                    new FileReader("src/main/java/Day01/input.txt"));
             String s;
             while ((s = br.readLine()) != null) {
                 depth.add(Integer.parseInt(s));
@@ -53,7 +53,7 @@ public class Task {
             return;
         }
 
-        depthMeasure(depth);
-        slidingWindow(depth);
+        System.out.println(depthMeasure(depth));
+        System.out.println(slidingWindow(depth));
     }
 }
